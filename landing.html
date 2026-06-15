@@ -594,5 +594,247 @@
         </div>
     </section>
 
+    <section id="services" class="py-16 md:py-24 border-t border-brand-line bg-white/40">
+        <div class="max-w-[1280px] mx-auto px-6">
+            
+            <div class="max-w-3xl mb-12">
+                <h2 class="font-unbounded font-black text-3xl sm:text-4xl tracking-tight leading-none mb-4 text-brand-dark">
+                    Оставьте заявку <span class="bg-gradient-to-r from-[#38d39f] to-[#22c55e] bg-clip-text text-transparent">за минуту</span>
+                </h2>
+                <p class="text-brand-muted text-lg font-semibold leading-relaxed">
+                    Ниже — удобная форма предварительного расчёта. Выберите нужный формат услуги, укажите адрес и отправьте заявку на связь с оператором.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                
+                <div class="lg:col-span-7 bg-white border border-slate-200/80 p-6 sm:p-8 rounded-[30px] shadow-card">
+                    <h3 class="font-unbounded font-black text-xl sm:text-2xl tracking-tight text-brand-dark mb-3">Быстрый заказ</h3>
+                    <p class="text-brand-muted text-sm font-semibold mb-6">Подходит для разового выноса мусора из квартиры, офиса, коридора, кладовой или после уборки.</p>
+
+                    <form action="#" method="post" class="flex flex-col gap-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="flex flex-col">
+                                <label for="name" class="text-[10px] uppercase tracking-widest font-black text-brand-muted mb-2">Ваше имя</label>
+                                <input class="w-full bg-brand-soft border-2 border-slate-100 rounded-xl px-4 py-3 text-sm font-bold text-brand-dark placeholder-brand-muted/70 outline-none focus:border-brand-green focus:bg-white transition-all" id="name" type="text" placeholder="Иван">
+                            </div>
+
+                            <div class="flex flex-col">
+                                <label for="phone" class="text-[10px] uppercase tracking-widest font-black text-brand-muted mb-2">Телефон</label>
+                                <input class="w-full bg-brand-soft border-2 border-slate-100 rounded-xl px-4 py-3 text-sm font-bold text-brand-dark placeholder-brand-muted/70 outline-none focus:border-brand-green focus:bg-white transition-all" id="phone" type="tel" placeholder="+7 (900) 000-00-00">
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="address" class="text-[10px] uppercase tracking-widest font-black text-brand-muted mb-2">Адрес</label>
+                            <input class="w-full bg-brand-soft border-2 border-slate-100 rounded-xl px-4 py-3 text-sm font-bold text-brand-dark placeholder-brand-muted/70 outline-none focus:border-brand-green focus:bg-white transition-all" id="address" type="text" placeholder="Белинского, 12, подъезд 2">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <span class="text-[10px] uppercase tracking-widest font-black text-brand-muted mb-2">Тип услуги</span>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                
+                                <label class="cursor-pointer block">
+                                    <input class="sr-only peer" id="service-once" type="radio" name="service-group" checked>
+                                    <div class="border-2 border-brand-line bg-white rounded-2xl p-4 transition-all peer-checked:border-brand-green peer-checked:bg-emerald-50/40">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <strong class="text-sm font-black text-brand-dark">Разовый вынос</strong>
+                                            <span class="w-[18px] h-[18px] rounded-full border-2 border-slate-300 flex items-center justify-center transition-colors">
+                                                <span class="w-2.5 h-2.5 rounded-full bg-brand-green opacity-0"></span>
+                                            </span>
+                                        </div>
+                                        <p class="text-xs text-brand-muted font-semibold leading-normal">Быстро заберём пакеты и бытовой мусор из квартиры или офиса.</p>
+                                    </div>
+                                </label>
+
+                                <label class="cursor-pointer block">
+                                    <input class="sr-only peer" id="service-regular" type="radio" name="service-group">
+                                    <div class="border-2 border-brand-line bg-white rounded-2xl p-4 transition-all peer-checked:border-brand-green peer-checked:bg-emerald-50/40">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <strong class="text-sm font-black text-brand-dark">Регулярный график</strong>
+                                            <span class="w-[18px] h-[18px] rounded-full border-2 border-slate-300 flex items-center justify-center transition-colors">
+                                                <span class="w-2.5 h-2.5 rounded-full bg-brand-green opacity-0"></span>
+                                            </span>
+                                        </div>
+                                        <p class="text-xs text-brand-muted font-semibold leading-normal">Подойдет для апартаментов, аренды, бизнес-объектов и ЖК.</p>
+                                    </div>
+                                </label>
+
+                            </div>
+                        </div>
+
+                        <style>
+                            input:checked + div span span { opacity: 1 !important; }
+                            input:checked + div span { border-color: #38d39f !important; }
+                        </style>
+
+                        <div class="flex flex-col">
+                            <label for="waste" class="text-[10px] uppercase tracking-widest font-black text-brand-muted mb-2">Что нужно вывезти</label>
+                            <select class="w-full bg-brand-soft border-2 border-slate-100 rounded-xl px-4 py-3 text-sm font-bold text-brand-dark outline-none focus:border-brand-green focus:bg-white transition-all appearance-none" id="waste">
+                                <option>Бытовой мусор в пакетах</option>
+                                <option>После уборки</option>
+                                <option>Мелкий хлам</option>
+                                <option>Офисный мусор</option>
+                            </select>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for="comment" class="text-[10px] uppercase tracking-widest font-black text-brand-muted mb-2">Комментарий</label>
+                            <textarea class="w-full bg-brand-soft border-2 border-slate-100 rounded-xl px-4 py-3 text-sm font-bold text-brand-dark placeholder-brand-muted/70 outline-none focus:border-brand-green focus:bg-white min-h-[110px] resize-vertical transition-all" id="comment" placeholder="Например: 5 пакетов, 4 этаж, есть лифт"></textarea>
+                        </div>
+
+                        <button class="inline-flex items-center justify-center gap-2 w-full py-4 rounded-xl text-xs uppercase tracking-widest font-black text-brand-dark bg-gradient-to-r from-[#38d39f] to-[#22c55e] hover:brightness-105 active:scale-95 transition-all shadow-main" type="submit">
+                            Отправить заявку
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </button>
+                    </form>
+
+                    <div class="mt-6 bg-brand-dark text-white rounded-3xl p-5 sm:p-7 flex justify-between items-end gap-4 shadow-lg">
+                        <div>
+                            <div class="text-[10px] uppercase tracking-widest font-black text-slate-400 mb-2">Ориентировочная стоимость</div>
+                            <p class="font-unbounded font-black text-2xl sm:text-3xl leading-none">390₽ <span class="text-sm font-manrope font-semibold text-slate-400">/от заказа</span></p>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-green text-brand-dark flex items-center justify-center shrink-0 font-black text-xl hover:translate-x-1 transition-transform">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 flex flex-col gap-6">
+                    
+                    <div class="relative rounded-[32px] overflow-hidden h-[380px] lg:h-[420px] shadow-card">
+                        <img class="w-full h-full object-cover rounded-[32px]" src="https://zibil.mmgroup.tech/assets/cdn-onedd/9bb4ddde81b94725a7d7302268424287.jpg" alt="Курьер сервиса ZIBIL" style="object-position: center 15%;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-brand-dark/30 to-brand-dark/10 rounded-[32px]"></div>
+                        <div class="absolute left-6 right-6 bottom-6 text-white z-10">
+                            <span class="inline-block bg-brand-green text-brand-dark px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider mb-3 whitespace-nowrap">Для дома и бизнеса</span>
+                            <h3 class="font-unbounded font-black text-lg sm:text-xl leading-snug">Работаем аккуратно и без лишнего шума</h3>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white border border-slate-200/80 rounded-[28px] p-6 shadow-sm">
+                            <p class="font-unbounded font-black text-3xl text-brand-green mb-2 leading-none">7 дней</p>
+                            <p class="text-brand-muted text-xs sm:text-sm font-semibold leading-relaxed">Работаем без выходных, чтобы вам было удобно вызывать вынос в любое время.</p>
+                        </div>
+                        <div class="bg-white border border-slate-200/80 rounded-[28px] p-6 shadow-sm">
+                            <p class="font-unbounded font-black text-3xl text-brand-green mb-2 leading-none">100%</p>
+                            <p class="text-brand-muted text-xs sm:text-sm font-semibold leading-relaxed">Понятная коммуникация: подтверждаем заявку, согласуем детали и приезжаем вовремя.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="how" class="relative bg-[#0b1220] text-white py-16 md:py-24 overflow-hidden">
+        <div class="absolute pointer-events-none z-[1] rounded-full top-[-100px] right-[-100px] w-[450px] h-[450px] blur-[110px] bg-gradient-to-br from-brand-green/12 to-transparent"></div>
+
+        <div class="max-w-[1280px] mx-auto px-6 relative z-10">
+            
+            <div class="max-w-3xl mb-12">
+                <h2 class="font-unbounded font-black text-3xl sm:text-4xl tracking-tight leading-none mb-4">
+                    Как это <span class="text-brand-green">работает</span>
+                </h2>
+                <p class="text-slate-400 text-lg font-semibold leading-relaxed">
+                    Мы сделали процесс максимально простым: никакой суеты, споров с соседями и лишних походов к контейнерам. Особенно удобно для семей, занятых специалистов и управляющих объектами.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-white/5 border border-white/10 rounded-[30px] p-6 hover:border-brand-green/30 transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-green/20 to-brand-green/5 text-brand-green flex items-center justify-center font-unbounded font-black text-xl mb-6">01</div>
+                    <h3 class="text-lg font-bold mb-3">Оставляете заявку</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm font-semibold leading-relaxed">Заполняете короткую форму на сайте или звоните нам. Уточняем объём, адрес и подходящее время.</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 rounded-[30px] p-6 hover:border-brand-green/30 transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-green/20 to-brand-green/5 text-brand-green flex items-center justify-center font-unbounded font-black text-xl mb-6">02</div>
+                    <h3 class="text-lg font-bold mb-3">Подтверждаем выезд</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm font-semibold leading-relaxed">Оператор связывается с вами, называет стоимость и подтверждает прибытие сотрудника.</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 rounded-[30px] p-6 hover:border-brand-green/30 transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-green/20 to-brand-green/5 text-brand-green flex items-center justify-center font-unbounded font-black text-xl mb-6">03</div>
+                    <h3 class="text-lg font-bold mb-3">Забираем мусор</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm font-semibold leading-relaxed">Курьер поднимается к двери, забирает пакеты, мешки или подготовленный объём мусора.</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 rounded-[30px] p-6 hover:border-brand-green/30 transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-green/20 to-brand-green/5 text-brand-green flex items-center justify-center font-unbounded font-black text-xl mb-6">04</div>
+                    <h3 class="text-lg font-bold mb-3">Вы отдыхаете</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm font-semibold leading-relaxed">Чисто в квартире, чисто в подъезде и никаких лишних хлопот. При необходимости подключаем регулярный график.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-[1280px] mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                
+                <div class="lg:col-span-5 relative h-[420px] lg:h-[640px] rounded-[42px] overflow-hidden shadow-overlay">
+                    <img class="w-full h-full object-cover rounded-[42px]" src="https://zibil.mmgroup.tech/assets/cdn-onedd/3cce0a9f99ea4060ad156f81affb630c.jpg" alt="Чистый двор">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/85 via-brand-dark/15 to-transparent rounded-[42px]"></div>
+                    <div class="absolute left-6 right-6 bottom-6 text-white z-10">
+                        <span class="inline-block bg-brand-green text-brand-dark px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider mb-3 whitespace-nowrap">Результат</span>
+                        <h3 class="font-unbounded font-black text-xl lg:text-2xl leading-snug">Чисто дома, в подъезде и на объекте</h3>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 flex flex-col gap-4">
+                    
+                    <div class="flex flex-col sm:flex-row gap-5 p-5 bg-white rounded-3xl border border-brand-line hover:border-brand-green/45 transition-colors shadow-sm">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-green/10 text-brand-green flex items-center justify-center font-unbounded font-black text-lg shrink-0">
+                            1
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-extrabold text-brand-dark mb-1">Забираем от двери</h4>
+                            <p class="text-brand-muted text-xs sm:text-sm font-semibold leading-relaxed">Не нужно самостоятельно нести пакеты вниз, идти к бакам или искать свободный контейнер.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-5 p-5 bg-white rounded-3xl border border-brand-line hover:border-brand-green/45 transition-colors shadow-sm">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-green/10 text-brand-green flex items-center justify-center font-unbounded font-black text-lg shrink-0">
+                            2
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-extrabold text-brand-dark mb-1">Подходит для квартир и офисов</h4>
+                            <p class="text-brand-muted text-xs sm:text-sm font-semibold leading-relaxed">Обслуживаем жилые помещения, коммерческие точки, апартаменты, студии и небольшие компании.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-5 p-5 bg-white rounded-3xl border border-brand-line hover:border-brand-green/45 transition-colors shadow-sm">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-green/10 text-brand-green flex items-center justify-center font-unbounded font-black text-lg shrink-0">
+                            3
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-extrabold text-brand-dark mb-1">После клининга и ремонта</h4>
+                            <p class="text-brand-muted text-xs sm:text-sm font-semibold leading-relaxed">Поможем убрать накопившийся мусор после генеральной уборки, переселения или мелких работ.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-5 p-5 bg-white rounded-3xl border border-brand-line hover:border-brand-green/45 transition-colors shadow-sm">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-green/10 text-brand-green flex items-center justify-center font-unbounded font-black text-lg shrink-0">
+                            4
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-extrabold text-brand-dark mb-1">Регулярный график</h4>
+                            <p class="text-brand-muted text-xs sm:text-sm font-semibold leading-relaxed">Настраиваем вынос по расписанию: ежедневно, несколько раз в неделю или под ваш режим.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
