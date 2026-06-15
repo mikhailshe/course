@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIBIL — Дашборд сервиса</title>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-green: #38d39f;
+            --brand-green-dark: #22c55e;
+            --brand-dark: #0f172a;
+            --brand-muted: #64748b;
+            --brand-line: #e2e8f0;
+            --brand-soft: #f8fafc;
+            --brand-light: #fcfcfd;
+            --emerald-50: #ecfdf5;
+            --emerald-100: #d1fae5;
+            --blue-50: #eff6ff;
+            --blue-500: #3b82f6;
+            --shadow-brand-main: 0 18px 36px rgba(56, 211, 159, 0.25);
+            --shadow-brand-card: 0 24px 60px rgba(15, 23, 42, 0.08);
+            --shadow-brand-overlay: 0 28px 80px rgba(15, 23, 42, 0.12);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--brand-light);
+            color: var(--brand-dark);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .ambient-blob {
+            position: fixed;
+            width: 520px;
+            height: 520px;
+            border-radius: 50%;
+            filter: blur(100px);
+            pointer-events: none;
+            z-index: -10;
+        }
+        .blob-1 {
+            top: -140px;
+            left: -160px;
+            background: linear-gradient(to bottom right, rgba(56, 211, 159, 0.12), transparent);
+        }
+        .blob-2 {
+            right: -160px;
+            bottom: -160px;
+            background: linear-gradient(to bottom right, rgba(59, 130, 246, 0.08), transparent);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+
+</body>
+</html>
