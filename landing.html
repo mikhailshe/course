@@ -78,32 +78,6 @@
         .bg-brand-dark { background-color: var(--brand-dark); }
         .bg-brand-green { background-color: var(--brand-green); }
         .bg-white { background-color: #ffffff; }
-
-        .text-brand-dark { color: var(--brand-dark); }
-        .text-brand-muted { color: var(--brand-muted); }
-        .text-brand-green { color: var(--brand-green); }
-
-        .antialiased { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-        .leading-relaxed { line-height: 1.625; }
-        .overflow-x-hidden { overflow-x: hidden; }
-        .pointer-events-none { pointer-events: none; }
-        .absolute { position: absolute; }
-        .z-\[-1\] { z-index: -1; }
-        .rounded-full { border-radius: 9999px; }
-        .top-\[-140px\] { top: -140px; }
-        .left-\[-160px\] { left: -160px; }
-        .right-\[-160px\] { right: -160px; }
-        .top-\[220px\] { top: 220px; }
-        .w-\[520px\] { width: 520px; }
-        .h-\[520px\] { height: 520px; }
-        .blur-\[100px\] { filter: blur(100px); }
-        .bg-gradient-to-br.from-\[\#38d39f\]\/18.to-transparent {
-            background-image: linear-gradient(135deg, rgba(56, 211, 159, 0.18) 0%, transparent 100%);
-        }
-        .bg-gradient-to-br.from-blue-500\/10.to-transparent {
-            background-image: linear-gradient(135deg, rgba(59, 130, 246, 0.10) 0%, transparent 100%);
-        }
-
         .bg-white\/85 { background-color: rgba(255, 255, 255, 0.85); }
         .bg-white\/95 { background-color: rgba(255, 255, 255, 0.95); }
         .bg-white\/5 { background-color: rgba(255, 255, 255, 0.05); }
@@ -112,6 +86,10 @@
         .bg-\[\#ffcc00\] { background-color: #ffcc00; }
         .bg-\[\#0b1220\] { background-color: #0b1220; }
         .bg-slate-800 { background-color: #1e293b; }
+
+        .text-brand-dark { color: var(--brand-dark); }
+        .text-brand-muted { color: var(--brand-muted); }
+        .text-brand-green { color: var(--brand-green); }
 
         .text-white { color: #ffffff; }
         .text-slate-700 { color: #334155; }
@@ -152,6 +130,7 @@
         .leading-tight { line-height: 1.25; }
         .leading-snug { line-height: 1.375; }
         .leading-normal { line-height: 1.5; }
+        .leading-relaxed { line-height: 1.625; }
 
         .block { display: block; }
         .inline-block { display: inline-block; }
@@ -169,6 +148,7 @@
         .shrink-0 { flex-shrink: 0; }
 
         .relative { position: relative; }
+        .absolute { position: absolute; }
         .sticky { position: sticky; }
         .top-0 { top: 0; }
         .top-5 { top: 1.25rem; }
@@ -178,6 +158,7 @@
         .right-6 { right: 1.5rem; }
         .z-10 { z-index: 10; }
         .z-20 { z-index: 20; }
+        .z-\[-1\] { z-index: -1; }
         .z-\[1\] { z-index: 1; }
         .z-\[100\] { z-index: 100; }
 
@@ -203,6 +184,8 @@
         .h-14 { height: 3.5rem; }
         .w-\[18px\] { width: 18px; }
         .h-\[18px\] { height: 18px; }
+        .w-\[520px\] { width: 520px; }
+        .h-\[520px\] { height: 520px; }
         .w-\[450px\] { width: 450px; }
         .h-\[450px\] { height: 450px; }
         .w-\[420px\] { width: 420px; }
@@ -280,6 +263,7 @@
         .border-white\/10 { border-color: rgba(255, 255, 255, 0.1); }
         .border-white { border-color: #ffffff; }
 
+        .rounded-full { border-radius: 9999px; }
         .rounded-xl { border-radius: 0.75rem; }
         .rounded-2xl { border-radius: 1rem; }
         .rounded-3xl { border-radius: 1.5rem; }
@@ -304,6 +288,12 @@
 
         .bg-clip-text { -webkit-background-clip: text; background-clip: text; }
 
+        .bg-gradient-to-br.from-\[\#38d39f\]\/18.to-transparent {
+            background-image: linear-gradient(135deg, rgba(56, 211, 159, 0.18) 0%, transparent 100%);
+        }
+        .bg-gradient-to-br.from-blue-500\/10.to-transparent {
+            background-image: linear-gradient(135deg, rgba(59, 130, 246, 0.10) 0%, transparent 100%);
+        }
         .bg-gradient-to-br.from-brand-green\/12.to-transparent {
             background-image: linear-gradient(135deg, rgba(56, 211, 159, 0.12) 0%, transparent 100%);
         }
@@ -326,15 +316,19 @@
             background-image: linear-gradient(90deg, #38d39f 0%, #22c55e 100%);
         }
 
+        .pointer-events-none { pointer-events: none; }
+        .overflow-x-hidden { overflow-x: hidden; }
         .overflow-hidden { 
             overflow: hidden !important; 
             -webkit-mask-image: -webkit-radial-gradient(white, black);
         }
         .whitespace-nowrap { white-space: nowrap; }
+        .antialiased { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
         .select-none { user-select: none; }
         .object-cover { object-fit: cover; }
-        .blur-\[90px\] { filter: blur(90px); }
+        .blur-\[100px\] { filter: blur(100px); }
         .blur-\[110px\] { filter: blur(110px); }
+        .blur-\[90px\] { filter: blur(90px); }
         .cursor-pointer { cursor: pointer; }
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
         .backdrop-blur-md { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
@@ -835,6 +829,308 @@
             </div>
         </div>
     </section>
+
+    <section id="pricing" class="py-16 md:py-24 bg-brand-soft border-t border-brand-line">
+        <div class="max-w-[1280px] mx-auto px-6">
+            
+            <div class="max-w-3xl mb-12">
+                <h2 class="font-unbounded font-black text-3xl sm:text-4xl tracking-tight leading-none mb-4 text-brand-dark">
+                    Тарифы на <span class="bg-gradient-to-r from-[#38d39f] to-[#22c55e] bg-clip-text text-transparent">вынос мусора</span>
+                </h2>
+                <p class="text-brand-muted text-lg font-semibold leading-relaxed">
+                    Выберите подходящий формат обслуживания. Точная стоимость зависит от адреса, объёма, этажа, наличия лифта и типа мусора.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                
+                <div class="bg-white border border-brand-line rounded-[34px] p-6 sm:p-8 flex flex-col justify-between hover:scale-[1.02] transition-transform shadow-sm">
+                    <div class="mb-8">
+                        <span class="text-[10px] uppercase tracking-widest font-black text-brand-muted block mb-4">Разовый вызов</span>
+                        <h3 class="font-unbounded font-black text-2xl text-brand-dark mb-4">Старт</h3>
+                        <p class="font-unbounded font-black text-3xl text-brand-dark mb-6">390₽ <span class="text-sm font-manrope font-semibold text-brand-muted">/заказ</span></p>
+                        
+                        <ul class="flex flex-col gap-4">
+                            <li class="flex items-center gap-3 text-sm font-bold text-slate-600">
+                                <span class="w-7 h-7 rounded-full bg-emerald-50 text-brand-green flex items-center justify-center shrink-0">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </span>
+                                До 3 пакетов бытового мусора
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-bold text-slate-600">
+                                <span class="w-7 h-7 rounded-full bg-emerald-50 text-brand-green flex items-center justify-center shrink-0">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </span>
+                                Вынос от двери
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-bold text-slate-600">
+                                <span class="w-7 h-7 rounded-full bg-emerald-50 text-brand-green flex items-center justify-center shrink-0">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </span>
+                                Быстрое подтверждение
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center justify-center w-full py-4 rounded-xl text-xs uppercase tracking-wider font-black border border-brand-line bg-white text-brand-dark hover:border-brand-green hover:text-brand-green transition-colors">Выбрать</a>
+                </div>
+
+                <div class="bg-white border border-brand-line rounded-[34px] p-6 sm:p-8 flex flex-col justify-between hover:scale-[1.02] transition-transform shadow-sm">
+                    <div class="mb-8">
+                        <span class="text-[10px] uppercase tracking-widest font-black text-brand-muted block mb-4">Регулярный сервис</span>
+                        <h3 class="font-unbounded font-black text-2xl text-brand-dark mb-4">Стандарт</h3>
+                        <p class="font-unbounded font-black text-3xl text-brand-dark mb-6">1 290₽ <span class="text-sm font-manrope font-semibold text-brand-muted">/мес</span></p>
+                        
+                        <ul class="flex flex-col gap-4">
+                            <li class="flex items-center gap-3 text-sm font-bold text-slate-600">
+                                <span class="w-7 h-7 rounded-full bg-emerald-50 text-brand-green flex items-center justify-center shrink-0">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </span>
+                                До 5 выносов в неделю
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-bold text-slate-600">
+                                <span class="w-7 h-7 rounded-full bg-emerald-50 text-brand-green flex items-center justify-center shrink-0">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </span>
+                                Для квартир и аренды
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-bold text-slate-600">
+                                <span class="w-7 h-7 rounded-full bg-emerald-50 text-brand-green flex items-center justify-center shrink-0">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </span>
+                                Удобный постоянный график
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-bold text-slate-600">
+                                <span class="w-7 h-7 rounded-full bg-emerald-50 text-brand-green flex items-center justify-center shrink-0">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </span>
+                                Приоритетное обслуживание
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center justify-center w-full py-4 rounded-xl text-xs uppercase tracking-wider font-black text-brand-dark bg-gradient-to-r from-[#38d39f] to-[#22c55e] hover:brightness-105 active:scale-95 transition-all">Подключить</a>
+                </div>
+
+                <div class="bg-white border border-brand-line rounded-[34px] p-6 sm:p-8 flex flex-col justify-between hover:scale-[1.02] transition-transform shadow-sm">
+                    <div class="mb-8">
+                        <span class="text-[10px] uppercase tracking-widest font-black text-brand-muted block mb-4">Для бизнеса</span>
+                        <h3 class="font-unbounded font-black text-2xl text-brand-dark mb-4">Бизнес</h3>
+                        <p class="font-unbounded font-black text-3xl text-brand-dark mb-6">2 490₽ <span class="text-sm font-manrope font-semibold text-brand-muted">/мес</span></p>
+                        
+                        <ul class="flex flex-col gap-4">
+                            <li class="flex items-center gap-3 text-sm font-bold text-slate-600">
+                                <span class="w-7 h-7 rounded-full bg-emerald-50 text-brand-green flex items-center justify-center shrink-0">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </span>
+                                Частые выезды по графику
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-bold text-slate-600">
+                                <span class="w-7 h-7 rounded-full bg-emerald-50 text-brand-green flex items-center justify-center shrink-0">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </span>
+                                Офисы, студии, салоны
+                            </li>
+                            <li class="flex items-center gap-3 text-sm font-bold text-slate-600">
+                                <span class="w-7 h-7 rounded-full bg-emerald-50 text-brand-green flex items-center justify-center shrink-0">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </span>
+                                Индивидуальные условия
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center justify-center w-full py-4 rounded-xl text-xs uppercase tracking-wider font-black border border-brand-line bg-white text-brand-dark hover:border-brand-green hover:text-brand-green transition-colors">Оставить запрос</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="areas" class="py-16 md:py-24 bg-brand-light">
+        <div class="max-w-[1280px] mx-auto px-6">
+            
+            <div class="max-w-3xl mb-12">
+                <h2 class="font-unbounded font-black text-3xl sm:text-4xl tracking-tight leading-none mb-4 text-brand-dark">
+                    Работаем по <span class="bg-gradient-to-r from-[#38d39f] to-[#22c55e] bg-clip-text text-transparent">районам города</span>
+                </h2>
+                <p class="text-brand-muted text-lg font-semibold leading-relaxed">
+                    Обслуживаем популярные жилые и коммерческие зоны Нижнего Новгорода. Если вашего адреса нет в списке — оставьте заявку, проверим возможность выезда вручную.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+                
+                <div class="flex flex-col justify-between gap-4">
+                    
+                    <div class="flex gap-4 p-5 bg-white border border-brand-line rounded-3xl hover:border-brand-green/30 transition-colors shadow-sm">
+                        <div class="w-11 h-11 rounded-xl bg-emerald-50 text-brand-green flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong class="block text-lg font-extrabold text-brand-dark mb-1">Нижегородский район</strong>
+                            <p class="text-brand-muted text-xs sm:text-sm font-semibold leading-relaxed">Квартиры, офисы, апартаменты, посуточная аренда и небольшие коммерческие помещения.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 p-5 bg-white border border-brand-line rounded-3xl hover:border-brand-green/30 transition-colors shadow-sm">
+                        <div class="w-11 h-11 rounded-xl bg-emerald-50 text-brand-green flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong class="block text-lg font-extrabold text-brand-dark mb-1">Советский район</strong>
+                            <p class="text-brand-muted text-xs sm:text-sm font-semibold leading-relaxed">Регулярный и разовый вынос мусора с удобным временем приезда.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 p-5 bg-white border border-brand-line rounded-3xl hover:border-brand-green/30 transition-colors shadow-sm">
+                        <div class="w-11 h-11 rounded-xl bg-emerald-50 text-brand-green flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong class="block text-lg font-extrabold text-brand-dark mb-1">Канавинский район</strong>
+                            <p class="text-brand-muted text-xs sm:text-sm font-semibold leading-relaxed">Быстрые заявки для домов, офисов, кабинетов, студий и локальных точек.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 p-5 bg-white border border-brand-line rounded-3xl hover:border-brand-green/30 transition-colors shadow-sm">
+                        <div class="w-11 h-11 rounded-xl bg-emerald-50 text-brand-green flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong class="block text-lg font-extrabold text-brand-dark mb-1">Автозаводский и Московский</strong>
+                            <p class="text-brand-muted text-xs sm:text-sm font-semibold leading-relaxed">Подключаем регулярное обслуживание и рассчитываем условия по объёму.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="relative h-[320px] sm:h-[450px] lg:h-auto rounded-[38px] overflow-hidden shadow-overlay">
+                    <img class="w-full h-full object-cover rounded-[38px]" src="https://cdn.onedd.apicentre.ru/424e0981a22b4754ab96aea10ab5270e.jpg" alt="Карта районов обслуживания ZIBIL">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="py-12 bg-white border-t border-brand-line">
+        <div class="max-w-[1280px] mx-auto px-6">
+            
+            <div class="relative bg-[#0b1220] rounded-[40px] p-8 sm:p-12 lg:p-16 overflow-hidden text-white shadow-overlay">
+                <div class="absolute pointer-events-none z-[1] rounded-full top-[-120px] right-[-120px] w-[420px] h-[420px] blur-[90px] bg-gradient-to-br from-brand-green/20 to-transparent"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center relative z-10">
+                    
+                    <div class="lg:col-span-7">
+                        <h2 class="font-unbounded font-black text-2xl sm:text-3xl lg:text-4xl leading-tight mb-5">
+                            Нужно быстро <span class="text-brand-green">убрать мусор</span>?
+                        </h2>
+                        <p class="text-slate-300 text-sm sm:text-base font-semibold leading-relaxed mb-8 max-w-[600px]">
+                            Оставьте номер телефона и адрес — перезвоним, уточним детали и предложим удобное время вывоза. Подходит для квартиры, офиса, аренды, уборки после гостей и ежедневного сервиса.
+                        </p>
+                        <a href="tel:+78001003330" class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-xs uppercase tracking-wider font-extrabold bg-white border border-slate-200 text-brand-dark hover:border-brand-green hover:text-brand-green hover:-translate-y-0.5 active:scale-95 transition-all">
+                            Позвонить сейчас
+                        </a>
+                    </div>
+
+                    <div class="lg:col-span-5 bg-white/5 border border-white/10 rounded-[30px] p-6 sm:p-8">
+                        <h3 class="text-xl font-black mb-2 text-white">Свяжемся с вами</h3>
+                        <p class="text-slate-300 text-xs sm:text-sm font-semibold mb-6">Заполните форму, и оператор подберёт оптимальный вариант услуги.</p>
+                        
+                        <form action="#" method="post" class="flex flex-col gap-4">
+                            <input class="w-full bg-white text-brand-dark border border-white/10 rounded-xl px-4 py-3.5 text-sm font-bold placeholder-brand-muted outline-none focus:ring-2 focus:ring-brand-green transition-all" type="text" placeholder="Ваше имя">
+                            <input class="w-full bg-white text-brand-dark border border-white/10 rounded-xl px-4 py-3.5 text-sm font-bold placeholder-brand-muted outline-none focus:ring-2 focus:ring-brand-green transition-all" type="tel" placeholder="+7 (900) 000-00-00">
+                            <input class="w-full bg-white text-brand-dark border border-white/10 rounded-xl px-4 py-3.5 text-sm font-bold placeholder-brand-muted outline-none focus:ring-2 focus:ring-brand-green transition-all" type="text" placeholder="Адрес">
+                            <button type="submit" class="inline-flex items-center justify-center gap-2 w-full py-4 rounded-xl text-xs uppercase tracking-widest font-black text-brand-dark bg-gradient-to-r from-[#38d39f] to-[#22c55e] hover:brightness-105 active:scale-95 transition-all shadow-main">
+                                Отправить заявку
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-brand-line py-12 md:py-16">
+        <div class="max-w-[1280px] mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+                
+                <div class="lg:col-span-5 flex flex-col gap-6">
+                    <a href="#" class="flex items-center gap-1 font-unbounded font-black text-2xl tracking-tighter text-brand-dark select-none">
+                        ZIBIL<span class="w-2.5 h-2.5 bg-brand-green rounded-full inline-block"></span>
+                    </a>
+                    <p class="text-brand-muted text-sm font-semibold leading-relaxed max-w-[320px]">
+                        Сервис по выносу мусора для квартир, офисов и коммерческих помещений в современном визуальном стиле.
+                    </p>
+                    <p class="text-brand-muted text-xs sm:text-sm font-semibold">
+                        603003, Нижний Новгород, ул. Кузовная, д. 30
+                    </p>
+                </div>
+
+                <div class="lg:col-span-3">
+                    <h4 class="text-sm font-black text-brand-dark uppercase tracking-wider mb-5">Навигация</h4>
+                    <ul class="flex flex-col gap-3.5">
+                        <li><a href="#services" class="text-xs uppercase tracking-wider font-extrabold text-brand-muted hover:text-brand-green transition-colors">Услуги</a></li>
+                        <li><a href="#how" class="text-xs uppercase tracking-wider font-extrabold text-brand-muted hover:text-brand-green transition-colors">Как работаем</a></li>
+                        <li><a href="#pricing" class="text-xs uppercase tracking-wider font-extrabold text-brand-muted hover:text-brand-green transition-colors">Тарифы</a></li>
+                        <li><a href="#areas" class="text-xs uppercase tracking-wider font-extrabold text-brand-muted hover:text-brand-green transition-colors">Районы</a></li>
+                        <li><a href="#contact" class="text-xs uppercase tracking-wider font-extrabold text-brand-muted hover:text-brand-green transition-colors">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-4 flex flex-col gap-4">
+                    <h4 class="text-sm font-black text-brand-dark uppercase tracking-wider mb-1">Контакты</h4>
+                    <p class="text-brand-muted text-sm font-semibold">
+                        <strong class="text-brand-dark font-bold">Телефон:</strong> <a class="hover:text-brand-green transition-colors" href="tel:+78001003330">+7 800 100-33-30</a>
+                    </p>
+                    <p class="text-brand-muted text-sm font-semibold">
+                        <strong class="text-brand-dark font-bold">График:</strong> ежедневно, без выходных
+                    </p>
+                    <p class="text-brand-muted text-sm font-semibold">
+                        <strong class="text-brand-dark font-bold">Формат:</strong> разовые вызовы и регулярное обслуживание
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
