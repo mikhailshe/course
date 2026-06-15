@@ -469,5 +469,130 @@
     <div class="absolute pointer-events-none z-[-1] rounded-full top-[-140px] left-[-160px] w-[520px] h-[520px] blur-[100px] bg-gradient-to-br from-[#38d39f]/18 to-transparent"></div>
     <div class="absolute pointer-events-none z-[-1] rounded-full right-[-160px] top-[220px] w-[520px] h-[520px] blur-[100px] bg-gradient-to-br from-blue-500/10 to-transparent"></div>
 
+    <header class="sticky top-0 z-[100] bg-white/85 backdrop-blur-md border-b border-slate-200/70">
+        <input type="checkbox" id="menu-toggle" class="hidden">
+        
+        <div class="max-w-[1280px] mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                
+                <a href="#" class="flex items-center gap-1 font-unbounded font-black text-2xl tracking-tighter text-brand-dark select-none">
+                    ZIBIL<span class="w-2.5 h-2.5 bg-brand-green rounded-full inline-block"></span>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#services" class="text-xs tracking-[0.08em] font-extrabold text-brand-muted hover:text-brand-green uppercase transition-colors">Услуги</a>
+                    <a href="#how" class="text-xs tracking-[0.08em] font-extrabold text-brand-muted hover:text-brand-green uppercase transition-colors">Как работаем</a>
+                    <a href="#pricing" class="text-xs tracking-[0.08em] font-extrabold text-brand-muted hover:text-brand-green uppercase transition-colors">Тарифы</a>
+                    <a href="#areas" class="text-xs tracking-[0.08em] font-extrabold text-brand-muted hover:text-brand-green uppercase transition-colors">Районы</a>
+                    <a href="#contact" class="text-xs tracking-[0.08em] font-extrabold text-brand-muted hover:text-brand-green uppercase transition-colors">Контакты</a>
+                </nav>
+
+                <div class="hidden md:flex items-center gap-5">
+                    <div class="text-right border-r border-brand-line pr-5">
+                        <div class="text-[10px] uppercase tracking-[0.08em] font-black text-brand-green mb-0.5">Нижний Новгород</div>
+                        <a class="text-sm font-black text-brand-dark hover:text-brand-green transition-colors" href="tel:+78001003330">+7 800 100-33-30</a>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center justify-center bg-brand-dark text-white px-8 py-3.5 rounded-xl text-xs uppercase tracking-wider font-extrabold hover:bg-slate-800 hover:-translate-y-0.5 transition-all">Войти</a>
+                </div>
+
+                <div class="flex lg:hidden items-center gap-4">
+                    <label for="menu-toggle" class="p-2 text-brand-dark hover:text-brand-green focus:outline-none cursor-pointer" aria-label="Открыть меню">
+                        <span class="burger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden bg-white/95 backdrop-blur-md border-t border-brand-line p-6 shadow-card lg:hidden">
+            <nav class="flex flex-col gap-4 mb-6">
+                <a href="#services" class="text-sm tracking-wide font-bold text-brand-muted hover:text-brand-green uppercase py-1.5 block transition-colors">Услуги</a>
+                <a href="#how" class="text-sm tracking-wide font-bold text-brand-muted hover:text-brand-green uppercase py-1.5 block transition-colors">Как работаем</a>
+                <a href="#pricing" class="text-sm tracking-wide font-bold text-brand-muted hover:text-brand-green uppercase py-1.5 block transition-colors">Тарифы</a>
+                <a href="#areas" class="text-sm tracking-wide font-bold text-brand-muted hover:text-brand-green uppercase py-1.5 block transition-colors">Районы</a>
+                <a href="#contact" class="text-sm tracking-wide font-bold text-brand-muted hover:text-brand-green uppercase py-1.5 block transition-colors">Контакты</a>
+            </nav>
+            <div class="pt-4 border-t border-brand-line flex flex-col gap-4">
+                <div>
+                    <span class="text-[10px] uppercase tracking-wider font-extrabold text-brand-green block mb-1">Нижний Новгород</span>
+                    <a class="text-lg font-black text-brand-dark" href="tel:+78001003330">+7 800 100-33-30</a>
+                </div>
+                <a href="#contact" class="inline-flex items-center justify-center bg-brand-dark text-white py-3 rounded-xl text-xs uppercase tracking-wider font-extrabold text-center">Войти</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative py-8 md:py-16">
+        <div class="max-w-[1280px] mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                
+                <div class="lg:col-span-7">
+                    <h1 class="font-unbounded font-black text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.1] mb-6 text-brand-dark">
+                        Вынос <span class="bg-gradient-to-r from-[#38d39f] to-[#22c55e] bg-clip-text text-transparent">мусора</span><br>без хлопот
+                    </h1>
+                    <p class="text-brand-muted text-lg lg:text-xl font-semibold leading-relaxed mb-8 max-w-[570px]">
+                        Новый сервис по выносу мусора в стиле современного технологичного бренда: быстро забираем бытовой, крупногабаритный и пакетированный мусор из квартиры, офиса и подъезда.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                        <a href="#contact" class="inline-flex items-center justify-center gap-2 px-9 py-5 rounded-2xl text-xs uppercase tracking-wider font-extrabold text-brand-dark bg-gradient-to-r from-[#38d39f] to-[#22c55e] hover:brightness-105 active:scale-95 transition-all shadow-main">
+                            Вызвать курьера
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </a>
+                        <a href="#pricing" class="inline-flex items-center justify-center px-9 py-5 rounded-2xl text-xs uppercase tracking-wider font-extrabold bg-white border border-brand-line text-brand-dark hover:border-brand-green hover:text-brand-green hover:-translate-y-0.5 active:scale-95 transition-all">
+                            Смотреть тарифы
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-[640px]">
+                        <div class="inline-flex items-center gap-3 px-5 py-3.5 rounded-full bg-white border border-slate-200/80 text-sm font-extrabold text-slate-700 shadow-sm">
+                            <span class="w-3 h-3 rounded-full bg-brand-green shrink-0"></span>
+                            В день обращения
+                        </div>
+                        <div class="inline-flex items-center gap-3 px-5 py-3.5 rounded-full bg-white border border-slate-200/80 text-sm font-extrabold text-slate-700 shadow-sm">
+                            <span class="w-3 h-3 rounded-full bg-brand-green shrink-0"></span>
+                            От двери квартиры
+                        </div>
+                        <div class="inline-flex items-center gap-3 px-5 py-3.5 rounded-full bg-white border border-slate-200/80 text-sm font-extrabold text-slate-700 shadow-sm">
+                            <span class="w-3 h-3 rounded-full bg-brand-green shrink-0"></span>
+                            Безопасно и аккуратно
+                        </div>
+                        <div class="inline-flex items-center gap-3 px-5 py-3.5 rounded-full bg-white border border-slate-200/80 text-sm font-extrabold text-slate-700 shadow-sm">
+                            <span class="w-3 h-3 rounded-full bg-brand-green shrink-0"></span>
+                            С заботой об экологии
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative flex flex-col gap-6">
+                    <div class="relative w-full h-[320px] sm:h-[450px] lg:h-[585px] rounded-[34px] overflow-hidden shadow-overlay">
+                        <img class="w-full h-full object-cover rounded-[34px]" src="https://zibil.mmgroup.tech/assets/cdn-onedd/376da5d0b01a499ca1d38511e08e5812.jpg" alt="Вынос мусора ZIBIL" style="object-position: center 30%;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent"></div>
+                        <div class="absolute top-5 right-5 bg-[#ffcc00] text-brand-dark px-4 py-2 rounded-full text-xs font-black tracking-widest uppercase border-3 border-white shadow-md -rotate-3 z-10">24/7</div>
+                    </div>
+
+                    <div class="lg:absolute lg:w-[240px] lg:z-20 lg:left-[-48px] lg:top-12 bg-white border border-slate-200/80 rounded-2xl p-5 shadow-card hover:-translate-y-1 transition-transform">
+                        <div class="text-[9px] uppercase tracking-widest font-black text-brand-muted mb-2">Выезд курьера</div>
+                        <div class="font-unbounded font-black text-2xl text-brand-dark leading-none">от 15 мин</div>
+                        <div class="text-xs text-brand-muted font-bold mt-1.5">по всем районам города</div>
+                    </div>
+
+                    <div class="lg:absolute lg:w-[240px] lg:z-20 lg:right-[-24px] lg:bottom-12 bg-white border border-slate-200/80 rounded-2xl p-5 shadow-card hover:-translate-y-1 transition-transform">
+                        <div class="text-[9px] uppercase tracking-widest font-black text-brand-muted mb-2">Минимальный чек</div>
+                        <div class="font-unbounded font-black text-2xl text-brand-dark leading-none">от 390₽</div>
+                        <div class="text-xs text-brand-muted font-bold mt-1.5">прозрачный расчет цены</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
