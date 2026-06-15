@@ -606,22 +606,22 @@
                     <h3 class="font-unbounded font-black text-xl sm:text-2xl tracking-tight text-brand-dark mb-3">Быстрый заказ</h3>
                     <p class="text-brand-muted text-sm font-semibold mb-6">Подходит для разового выноса мусора из квартиры, офиса, коридора, кладовой или после уборки.</p>
 
-                    <form action="#" method="post" class="flex flex-col gap-5">
+                    <form action="thank-you.html" method="get" class="flex flex-col gap-5 js-feedback-form">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div class="flex flex-col">
                                 <label for="name" class="text-[10px] uppercase tracking-widest font-black text-brand-muted mb-2">Ваше имя</label>
-                                <input class="w-full bg-brand-soft border-2 border-slate-100 rounded-xl px-4 py-3 text-sm font-bold text-brand-dark placeholder-brand-muted/70 outline-none focus:border-brand-green focus:bg-white transition-all" id="name" type="text" placeholder="Иван">
+                                <input class="w-full bg-brand-soft border-2 border-slate-100 rounded-xl px-4 py-3 text-sm font-bold text-brand-dark placeholder-brand-muted/70 outline-none focus:border-brand-green focus:bg-white transition-all" id="name" name="name" type="text" placeholder="Иван" required>
                             </div>
 
                             <div class="flex flex-col">
                                 <label for="phone" class="text-[10px] uppercase tracking-widest font-black text-brand-muted mb-2">Телефон</label>
-                                <input class="w-full bg-brand-soft border-2 border-slate-100 rounded-xl px-4 py-3 text-sm font-bold text-brand-dark placeholder-brand-muted/70 outline-none focus:border-brand-green focus:bg-white transition-all" id="phone" type="tel" placeholder="+7 (900) 000-00-00">
+                                <input class="w-full bg-brand-soft border-2 border-slate-100 rounded-xl px-4 py-3 text-sm font-bold text-brand-dark placeholder-brand-muted/70 outline-none focus:border-brand-green focus:bg-white transition-all" id="phone" name="phone" type="tel" placeholder="+7 (900) 000-00-00" required>
                             </div>
                         </div>
 
                         <div class="flex flex-col">
                             <label for="address" class="text-[10px] uppercase tracking-widest font-black text-brand-muted mb-2">Адрес</label>
-                            <input class="w-full bg-brand-soft border-2 border-slate-100 rounded-xl px-4 py-3 text-sm font-bold text-brand-dark placeholder-brand-muted/70 outline-none focus:border-brand-green focus:bg-white transition-all" id="address" type="text" placeholder="Белинского, 12, подъезд 2">
+                            <input class="w-full bg-brand-soft border-2 border-slate-100 rounded-xl px-4 py-3 text-sm font-bold text-brand-dark placeholder-brand-muted/70 outline-none focus:border-brand-green focus:bg-white transition-all" id="address" name="address" type="text" placeholder="Белинского, 12, подъезд 2" required>
                         </div>
 
                         <div class="flex flex-col">
@@ -1068,10 +1068,10 @@
                         <h3 class="text-xl font-black mb-2 text-white">Свяжемся с вами</h3>
                         <p class="text-slate-300 text-xs sm:text-sm font-semibold mb-6">Заполните форму, и оператор подберёт оптимальный вариант услуги.</p>
                         
-                        <form action="#" method="post" class="flex flex-col gap-4">
-                            <input class="w-full bg-white text-brand-dark border border-white/10 rounded-xl px-4 py-3.5 text-sm font-bold placeholder-brand-muted outline-none focus:ring-2 focus:ring-brand-green transition-all" type="text" placeholder="Ваше имя">
-                            <input class="w-full bg-white text-brand-dark border border-white/10 rounded-xl px-4 py-3.5 text-sm font-bold placeholder-brand-muted outline-none focus:ring-2 focus:ring-brand-green transition-all" type="tel" placeholder="+7 (900) 000-00-00">
-                            <input class="w-full bg-white text-brand-dark border border-white/10 rounded-xl px-4 py-3.5 text-sm font-bold placeholder-brand-muted outline-none focus:ring-2 focus:ring-brand-green transition-all" type="text" placeholder="Адрес">
+                        <form action="thank-you.html" method="get" class="flex flex-col gap-4 js-feedback-form">
+                            <input class="w-full bg-white text-brand-dark border border-white/10 rounded-xl px-4 py-3.5 text-sm font-bold placeholder-brand-muted outline-none focus:ring-2 focus:ring-brand-green transition-all" id="contact-name" name="name" type="text" placeholder="Ваше имя" required>
+                            <input class="w-full bg-white text-brand-dark border border-white/10 rounded-xl px-4 py-3.5 text-sm font-bold placeholder-brand-muted outline-none focus:ring-2 focus:ring-brand-green transition-all" id="contact-phone" name="phone" type="tel" placeholder="+7 (900) 000-00-00" required>
+                            <input class="w-full bg-white text-brand-dark border border-white/10 rounded-xl px-4 py-3.5 text-sm font-bold placeholder-brand-muted outline-none focus:ring-2 focus:ring-brand-green transition-all" id="contact-address" name="address" type="text" placeholder="Адрес" required>
                             <button type="submit" class="inline-flex items-center justify-center gap-2 w-full py-4 rounded-xl text-xs uppercase tracking-widest font-black text-brand-dark bg-gradient-to-r from-[#38d39f] to-[#22c55e] hover:brightness-105 active:scale-95 transition-all shadow-main">
                                 Отправить заявку
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -1131,6 +1131,20 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelectorAll('.js-feedback-form').forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    form.reportValidity();
+                    return;
+                }
+                event.preventDefault();
+                window.location.href = form.getAttribute('action');
+            });
+        });
+    </script>
 
 </body>
 </html>
